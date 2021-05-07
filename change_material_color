@@ -30,8 +30,8 @@ for ob in bpy.data.objects:
 #        print(ob.name)
 #        print(ob.active_material.diffuse_color[0])
         for slot in ob.material_slots:
-            if slot.material.name == 'name_material_for_change':
-                mat = bpy.data.materials['name_material']
+            if slot.material.name == 'name_material_for_change': # the name of the material that you want to change
+                mat = bpy.data.materials['name_material_exists'] # name of material that has been stored or already exists
 #                print(mat)
                 slot.material = mat
                 print('uhuyy')
